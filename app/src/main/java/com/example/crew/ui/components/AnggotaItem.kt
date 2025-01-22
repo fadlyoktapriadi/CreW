@@ -35,7 +35,8 @@ fun AnggotaItem(
         elevation = CardDefaults.cardElevation(
             defaultElevation = 6.dp
         ),
-        modifier = Modifier.fillMaxWidth(),
+        modifier = Modifier.fillMaxWidth()
+            .padding(start = 16.dp, top = 4.dp, end = 16.dp, bottom = 12.dp),
         onClick = { }
     ) {
         Column (
@@ -46,10 +47,27 @@ fun AnggotaItem(
                     defaultElevation = 6.dp
                 ),
                 colors = CardDefaults.cardColors(
-                    containerColor = Color(0xFFA9FF89),
+                    containerColor = if (Status == "Aktif") Color(0xFFA9FF89) else Color(0xFFFF8A8A),
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 ),
-                modifier = Modifier
-                    .size(width = 60.dp, height = 25.dp)
+                modifier = Modifier.fillMaxWidth()
             ) {
                 Row(
                     modifier = Modifier
@@ -131,6 +149,6 @@ fun AnggotaItemPreview() {
         tgl_registrasi = "13-07-2021",
         alamat = "Serang",
         Telepon = "08123456789",
-        Status = "Aktif",
+        Status = "Tidak Aktif",
     )
 }

@@ -56,7 +56,7 @@ fun HomeContent(
         )
         LazyColumn(
             contentPadding = PaddingValues(16.dp),
-            modifier = Modifier.padding(16.dp)
+            modifier = Modifier.padding(8.dp)
         ) {
             items(listAnggota) { anggota ->
                 AnggotaItem(
@@ -69,24 +69,5 @@ fun HomeContent(
                 )
             }
         }
-//        LazyVerticalGrid(
-//            columns = GridCells.Adaptive(160.dp),
-//            contentPadding = PaddingValues(16.dp),
-//            horizontalArrangement = Arrangement.spacedBy(16.dp),
-//            verticalArrangement = Arrangement.spacedBy(16.dp),
-//            modifier = modifier
-//        ) {
-//            items(orderBatik) { data ->
-//                BatikItem(
-//                    image = data.batik.image,
-//                    title = data.batik.title,
-//                    category = data.batik.category,
-//                    price = data.batik.price,
-//                    modifier = Modifier.clickable {
-//                        navigateToDetail(data.batik.id)
-//                    }
-//                )
-//            }
-//        }
     }
 }

@@ -10,12 +10,12 @@ import kotlinx.coroutines.CoroutineScope
 class CrewRepository(context: Context, scope: CoroutineScope) {
     private val crewDao: CrewDao = CrewDatabase.getDatabase(context, scope).crewDao()
 
-    suspend fun insertAnggota(anggota: Anggota) {
-        crewDao.insert(anggota)
-    }
-
     suspend fun getAllAnggota(): List<Anggota> {
         return crewDao.getAllAnggota()
+    }
+
+    suspend fun getAllAnggotaNonAktif(): List<Anggota> {
+        return crewDao.getAllAnggotaNonAktif()
     }
 
     companion object {

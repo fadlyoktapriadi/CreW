@@ -26,7 +26,6 @@ abstract class CrewDatabase : RoomDatabase() {
         }
 
         suspend fun populateDatabase(crewDao: CrewDao) {
-            // Add initial data here
             val initialAnggota = listOf(
                 Anggota(
                     kode_anggota = "OG-2107001",
