@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">CreW</string>
+    <string name="menu_home">Anggota Aktif</string>
+    <string name="menu_nonactive">Anggota Non Aktif</string>
+    <string name="kode_anggota">Kode Anggota: %s</string>
+    <string name="nama_anggota">Nama Anggota: %s</string>
+    <string name="tgl_registrasi">Tanggal Registrasi: %s</string>
+    <string name="alamat_anggota">Alamat Anggota: %s</string>
+    <string name="no_telp">No. Telp: %s</string>
+
 </resources>
